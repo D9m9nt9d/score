@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Local Storage</title>
+
+  <link rel="stylesheet" href="score.css">
+</head>
+
+<body>
+
+  <div class="centered">
+    <p>
+      Your score: 0
+    </p>
+
+    <div class="spacer">
+      <button onclick="addScore();">
+        Click for +1 score
+      </button>
+
+      <button onclick="openPopup();">
+        Reset everything
+      </button>
+    </div>
+  </div>
+
+  <div class="sidebar">
+    
+  </div>
+
+  <div class="popup">
+    <div class="centered">
+      <p>Reset everything?</p>
+      <div class="spacer">
+        <button onclick="resetEverything(); closePopup();">Yes</button>
+        <button onclick="closePopup();">No</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="score.js"></script>
+</body>
+
+</html>

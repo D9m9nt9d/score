@@ -1,0 +1,93 @@
+body {
+  background-color: rgb(73, 73, 73);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  margin: 0;
+
+  font-size: 30px;
+  font-family: monospace;
+}
+
+p {
+  width: 410px;
+  height: 50px;
+
+  background-color: rgb(48, 102, 218);
+  color: aliceblue;
+
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(36, 32, 167);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+
+  text-align: center;
+  line-height: 50px;
+
+  margin: 0;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+
+  background-color: rgb(48, 102, 218);
+  color: aliceblue;
+
+  border-width: 3px;
+  border-color: rgb(36, 32, 167);
+  border-radius: 2px;
+  border-style: solid;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease,
+  opacity 0.5s;
+
+  font-size: 17px;
+  font-family: monospace;
+}
+
+button:hover {
+  background-color: rgb(41, 36, 171);
+  cursor: pointer;
+}
+
+.cooldown {
+  opacity: .6 !important;
+}
+
+.spacer {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.popup {
+  background-color: rgba(50, 71, 155, 0.9);
+  border: 3px solid rgba(32, 49, 114, 1);
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  padding: 20px;
+
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  visibility: hidden;
+}
+
+.sidebar {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
